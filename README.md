@@ -2,10 +2,10 @@
 
 <!-- Temp. -->
 ## To do:
-- [] Login/Sign Up
-- [] Search page
-- [] Link results through Yelp
-- [] Click for Gen Z Instagram analysis
+- [ ] Login/Sign Up
+- [ ] Search page
+- [ ] Link results through Yelp
+- [ ] Click for Gen Z Instagram analysis
 
 ## Prerequisites
 
