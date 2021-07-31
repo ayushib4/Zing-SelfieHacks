@@ -1,28 +1,23 @@
-import React from 'react'
+import React from 'react';
+import { SearchBar } from '../components/Searchbar';
+import useReactRouter from 'use-react-router';
 
-export default function Home() {
-    return (
-        <div className="has-background-primary-light">
-            <header class="hero-body">
-                <div class="container has-text-centered">
-                    <div class="field has-addons">
-                    <p class="control">
-                        <input className="input is-medium" type="text" placeholder="restaurants, cuisine"/>
-                    </p>
-                    <p class="control">
-                        <button className="button is-static is-medium">NEAR</button>
-                    </p>
-                    <p class="control">
-                        <input className="input is-medium" type="text" placeholder="city"/>
-                    </p>
-                    <div class="control ">
-                        <a href ="/results">
-                            <button className="button is-medium">Search Now</button>
-                        </a>
-                    </div>
-                </div>
-                </div>
-            </header>
-        </div>
-    )
+export function Home() {
+  const { history } = useReactRouter();
+
+  function search(term, location) {
+    const urlEncodedTerm = encodeURI(term);
+    const urlEncodedLocation = encodeURI(location);
+    history.push(
+      `/search?find_desc=${urlEncodedTerm}&find_loc=${urlEncodedLocation}`
+    );
+  }
+
+  return (
+    <div className="">
+      <div className="">
+        <SearchBar search={search} />
+      </div>
+    </div>
+  );
 }

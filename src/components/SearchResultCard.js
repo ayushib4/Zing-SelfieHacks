@@ -1,10 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import StarRatingComponent from 'react-star-rating-component';
 
 export default function SearchResultCard() {
     return (
-        <div class="card mx-6 my-4">
+        <div className="">
             <div class="card-content">
+                jckxvnjxkc
                 <div class="media">
                     <div class="media-content">
                         <p class="title is-4">Restaurant Name</p>
