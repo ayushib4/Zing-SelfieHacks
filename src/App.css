@@ -106,3 +106,9 @@ button {
   font-size: 2.5rem;
   font-family: "Dancing Script", cursive;
 }
+
+.Home__SearchBar{
+  padding: 20px;
+  display: grid;
+  place-items: center;
+}

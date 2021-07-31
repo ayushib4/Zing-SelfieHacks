@@ -23,13 +23,13 @@ function Navbar({ handleLogout }) {
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/search' className='nav-links' onClick={closeMobileMenu}>
                             Search
                         </Link>
                     </li>
                     <li className='nav-item'>
                         <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                            Yelp Result
+                            Gen Z
                         </Link>
                     </li>
                     <li className='nav-item' style={{ cursor: "pointer" }}>

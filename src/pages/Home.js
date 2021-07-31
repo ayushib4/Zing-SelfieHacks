@@ -1,6 +1,7 @@
 import React from 'react';
 import { SearchBar } from '../components/Searchbar';
 import useReactRouter from 'use-react-router';
+import Fade from 'react-reveal/Fade';
 
 export function Home() {
   const { history } = useReactRouter();
@@ -15,9 +16,12 @@ export function Home() {
 
   return (
     <div className="">
-      <div className="">
-        <SearchBar search={search} />
-      </div>
+      some content
+      <Fade bottom>
+        <div className="Home__SearchBar" >
+          <SearchBar search={search} />
+        </div>
+      </Fade>
     </div>
   );
 }
