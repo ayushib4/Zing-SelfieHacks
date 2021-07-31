@@ -1,5 +1,6 @@
 import React from 'react';
 import { SearchBar } from '../../components/Searchbar';
+
 export function NavBar(props) {
     return (
         <div className="">
