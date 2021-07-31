@@ -14,10 +14,12 @@ export function Home() {
   }
 
   return (
-    <div className="">
-      <div className="">
-        <SearchBar search={search} />
+    <section class="hero is-fullheight-with-navbar has-background-primary-light">
+      <div>
+        <header class="hero-body center">
+          <SearchBar search={search} />
+        </header>
       </div>
-    </div>
+    </section>
   );
 }

@@ -10,7 +10,7 @@ export function SearchResults(props) {
     }
 
     return (
-        <div className={styles['search-results']}>
+        <div class="container center">
             {searchResults}
         </div>
     );
