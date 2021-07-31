@@ -16,8 +16,8 @@ export function SearchResult(props) {
             <div class="card-content">
                 <div class="columns">
                     <div class="column is-narrow">
-                        <figure class="image is-128x128">
-                                <img src={b.image_url} alt='business' height="128px" width="128px"/>
+                        <figure class="image is-128x128 is-square">
+                                <img src={b.image_url} alt='business'/>
                         </figure>
                     </div>
                     <div class="column is-auto">
