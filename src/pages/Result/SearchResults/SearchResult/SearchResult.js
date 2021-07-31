@@ -23,6 +23,7 @@ export function SearchResult(props) {
                     <div class="column is-auto">
                         <p class="title is-4 mb-0">{b.name}</p>
                         <BusinessRating reviewCount={b.review_count} rating={b.rating}/>
+                       <a href={b.url} target="blank">Know more</a>
                         <footer class="card-footer mb-0 pb-0 mt-6"><p>{b.price} {tags}</p></footer>
                     </div>
                     <div class="column is-3">
