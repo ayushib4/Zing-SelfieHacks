@@ -1,9 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from "./pages/Home"
-import ResultPage from './pages/ResultPage';
-import Login from './pages/Login';
+import {Home} from "./pages/Home"
+import {ResultPage} from './pages/ResultPage';
 import fire from "./firebase"
 
 function Main() {
@@ -16,9 +15,9 @@ function Main() {
         <Router>
             <Navbar handleLogout={handleLogout} />
             <Switch>
-                <Route path='/' exact component={Login} />
-                <Route path="/Home"><Home /></Route>
-                <Route path="/results"><ResultPage /></Route>
+                <Route path='/' exact component={Home} />
+                <Route path='/search' exact component={ResultPage} />
+                <Redirect to="/" />
             </Switch>
         </Router>
     );

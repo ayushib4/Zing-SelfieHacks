@@ -1,18 +1,35 @@
-import React from "react";
-import SearchResultCard from "../components/SearchResultCard";
+import React from 'react';
+import { SearchResultsSummary } from './Result/SearchResultsSummary/SearchResultsSummary';
+import { SearchResults } from './Result/SearchResults/SearchResults';
+import useReactRouter from 'use-react-router';
+import {useBusinessSearch} from '../hooks/useBusinessSearch';
 
-export default function ResultPage() {
-  return (
-    <div>
-      <section class="section py-5 has-background-light">
-        <h1 class="title ">
-          <strong>Search Result for ...</strong>
-        </h1>
-      </section>
-      <section class="section is-fullheight">
-        <SearchResultCard />
-        <SearchResultCard />
-      </section>
-    </div>
-  );
+export function ResultPage() {
+    const {location, history} = useReactRouter();
+    const params = new URLSearchParams(location.search);
+    const term = params.get('find_desc');
+    const locationParam = params.get('find_loc');
+    const [businesses, amountResults, searchParams, performSearch] = useBusinessSearch(term, locationParam);
+
+    if (!term || !locationParam) {
+        history.push('/');
+    }
+
+    function search(term, location) {
+        const encodedTerm = encodeURI(term);
+        const encodedLocation = encodeURI(location);
+        history.push(`/search?find_desc=${encodedTerm}&find_loc=${encodedLocation}`);
+        performSearch({term, location});
+    }
+
+    return (
+        <div>
+            <SearchResultsSummary term={searchParams.term}
+                                  location={searchParams.location}
+                                  amountResults={amountResults}
+                                  shownResults={businesses ? businesses.length : 0}
+            />
+            <SearchResults businesses={businesses}/>
+        </div>
+    );
 }
