@@ -16,8 +16,7 @@ function Main() {
         <Router>
             <Navbar handleLogout={handleLogout} />
             <Switch>
-                <Route path='/' exact component={Login} />
-                <Route path="/Home"><Home /></Route>
+                <Route path="/"><Home /></Route>
                 <Route path="/results"><ResultPage /></Route>
             </Switch>
         </Router>
