@@ -26,13 +26,13 @@ export function ResultPage() {
 
     return (
         <div>
-
-            <Fade top>
-                <div className="Home__SearchBar">
-                    <SearchBar term={term} location={locationParam} search={search} />
-                </div>
-            </Fade>
-
+            <div className="hero has-background-primary-light">
+                <Fade top>
+                    <div className="Home__SearchBar">
+                        <SearchBar term={term} location={locationParam} search={search} />
+                    </div>
+                </Fade>
+            </div>
             <Fade bottom>
                 <SearchResultsSummary term={searchParams.term}
                     location={searchParams.location}

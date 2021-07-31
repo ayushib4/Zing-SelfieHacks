@@ -16,7 +16,6 @@ export function Home() {
 
   return (
     <div className="hero has-background-primary-light">
-      some content
       <Fade bottom>
         <div className="Home__SearchBar" >
           <SearchBar search={search} />
