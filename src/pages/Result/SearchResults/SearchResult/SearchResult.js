@@ -12,17 +12,25 @@ export function SearchResult(props) {
     const addressLines = b.location.display_address.map(addressLine => <p key={b.id + addressLine}>{addressLine}</p>);
 
     return (
-            <div className={styles['search-result']}>
-                <img src={b.image_url} alt='business' className={styles['business-image']} />
-                <div className={styles['business-info']}>
-                    <h2 className="subtitle">{b.name}</h2>
-                    <BusinessRating reviewCount={b.review_count} rating={b.rating} />
-                    <p>{b.price} {tags}</p>
-                </div>
-                <div className={styles['contact-info']}>
-                    <p>{b.phone}</p>
-                    {addressLines}
+        <div class="card mx-6 my-4 is-max-desktop">
+            <div class="card-content">
+                <div class="columns">
+                    <div class="column is-narrow">
+                        <figure class="image is-128x128">
+                                <img src={b.image_url} alt='business' height="128px" width="128px"/>
+                        </figure>
+                    </div>
+                    <div class="column is-auto">
+                        <p class="title is-4 mb-0">{b.name}</p>
+                        <BusinessRating reviewCount={b.review_count} rating={b.rating}/>
+                        <footer class="card-footer mb-0 pb-0 mt-6"><p>{b.price} {tags}</p></footer>
+                    </div>
+                    <div class="column is-3">
+                        <p class="subtitle is-6 pr-4">{addressLines}</p>
+                        <p class="subtitle is-6 pr-4">{b.phone}</p>
+                    </div>
                 </div>
             </div>
+        </div>
     )
 }

@@ -23,3 +23,12 @@
 :global(.tag).business-tag {
   margin-right: 4px;
 }
+
+.card .card-image,
+.card .card-image .image img {
+  height: 200px;
+}
+
+.footer {
+  bottom:0;
+}
