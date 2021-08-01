@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Libre+Baskerville:ital@1&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import "../globals.css";
+
 .navbar {
-  background: #171c28;
+  background: #fff;
   height: 65px;
   display: flex;
   justify-content: center;
@@ -11,13 +10,17 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color: var(--color-theme-orange);
+  font-weight: bold;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
-  font-family: "Dancing Script", cursive;
+}
+
+.navbar-logo:hover {
+  color: var(--color-theme-orange);
 }
 
 .fa-firstdraft {
@@ -43,16 +46,14 @@
 }
 
 .nav-links {
-  color: white;
+  color: var(--color-theme-orange);
   text-decoration: none;
   padding: 0.5rem 1rem;
-  font-family: "Source Serif Pro", serif;
 }
 
 .nav-links:hover {
-  background-color: #1888ff;
-  border-radius: 10px;
   transition: all 0.2s ease-out;
+  color: slategrey;
 }
 
 .fa-bars {
@@ -138,4 +139,22 @@
   button {
     display: none;
   }
+}
+
+.logout-button {
+  background-color: var(--color-theme-orange);
+  width: 90px;
+  font-size: 1.1rem;
+}
+
+.logout-button:hover {
+  background-color: var(--color-theme-lightorange);
+}
+
+.nav-home {
+  color: black;
+}
+
+.nav-home:hover {
+  color: slategray;
 }

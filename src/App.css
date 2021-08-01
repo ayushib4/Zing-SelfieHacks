@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap");
+@import "./globals.css";
 
 * {
   box-sizing: border-box;
@@ -16,7 +14,7 @@ button {
   color: #fff;
   font-size: 16px;
   letter-spacing: 1px;
-  background: #603bbb;
+  background: var(--color-theme-red);
   cursor: pointer;
   border-radius: 15px;
 }
@@ -40,9 +38,8 @@ button {
   justify-content: center;
   background: radial-gradient(
     ellipse at left bottom,
-    rgba(22, 24, 47, 1) 0%,
-    rgba(38, 20, 72, 0.9) 59%,
-    rgba(17, 27, 75, 0.9) 100%
+    var(--color-theme-orange) 0%,
+    var(--color-theme-lightorange) 100%
   );
   box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
   /* border-radius: 15px; */
@@ -99,15 +96,13 @@ button {
   font-size: 16px;
 }
 
-.zing-Heading{
-  color: #ffccee;
-  padding-left: 15%;
+.zing-Heading {
+  color: white;
   font-weight: 800;
   font-size: 2.5rem;
-  font-family: "Dancing Script", cursive;
 }
 
-.Home__SearchBar{
+.Home__SearchBar {
   padding: 20px;
   display: grid;
   place-items: center;
