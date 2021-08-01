@@ -1,0 +1,43 @@
+@import "../globals.css";
+
+.sec-header {
+  color: var(--color-theme-red);
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.title {
+  color: var(--color-theme-red);
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.image {
+  width: fit-content;
+  width: 400px;
+}
+
+.em-image {
+  width: fit-content;
+  width: 100px;
+}
+
+.pfp {
+  width: max-content;
+  width: 100px;
+  height: max-content;
+  height: 100px;
+}
+
+.logo {
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.button {
+  width: fit-content;
+  background-color: var(--color-theme-lightorange);
+}

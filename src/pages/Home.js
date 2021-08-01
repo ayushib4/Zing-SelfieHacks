@@ -21,11 +21,10 @@ export function Home() {
     <div>
       <center>
         <Fade bottom>
-          <div className="header">instagram-worthy restaurants</div>
+          <div className="header">Discover Instagram-Worthy Restaurants</div>
           <Carousel className="carousel">
             <Carousel.Item>
               <Image
-                stretch
                 className="images"
                 src="https://www.nyfa.edu/student-resources/wp-content/uploads/2019/08/rachel-park-hrlvr2ZlUNk-unsplash.jpg"
               ></Image>
@@ -38,7 +37,6 @@ export function Home() {
             </Carousel.Item>
             <Carousel.Item>
               <Image
-                fluid
                 className="images"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmfniHQ0ZoAFcdRqkcJAeJDxD4zIChmo6ZUEjwuH1U8QGblq-kNaPNUQKc2fQ63O3CdUA&usqp=CAU"
               ></Image>

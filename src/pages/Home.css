@@ -15,5 +15,12 @@
   padding-top: 10px;
   height: 300px;
   width: 400px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.images {
+  width: max-content;
+  width: 400px;
+  height: max-content;
+  height: 300px;
 }
