@@ -26,17 +26,17 @@ export function SearchResult(props) {
     <div class="card mx-6 my-4 is-max-desktop">
       <div class="card-content">
         <div class="columns">
-          <div class="column is-narrow">
-            <figure class="image is-128x128 is-square">
-              <img src={b.image_url} alt="business" />
+          <div class="column is-narrow ">
+            <figure class="image is-square is-128x128">
+              <img src={b.image_url} alt="business"/>
             </figure>
           </div>
           <div class="column is-auto">
-            <p class="title is-4 mb-0">{b.name}</p>
+            <p class="title is-4 m-0">{b.name}</p>
             <BusinessRating reviewCount={b.review_count} rating={b.rating} />
-            <a href={b.url} target="blank">
+            <p class="mb-3"><a href={b.url} target="blank">
               Know more
-            </a>
+            </a></p>
             <Link to="/insta">
               <Button variant="info" size="lg">
                 Zing It!

@@ -12,7 +12,7 @@ export function BusinessRating(props) {
                 readonly
                 initialRating={props.rating}
             />
-            <p>{props.reviewCount} Reviews</p>
+            <p class="mt-3">{props.reviewCount} Reviews</p>
         </div>
     );
 }

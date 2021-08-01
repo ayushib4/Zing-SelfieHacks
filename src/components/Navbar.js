@@ -9,8 +9,8 @@ function Navbar({ handleLogout }) {
 
   return (
     <>
-      <nav className="navbar">
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+      <nav className="navbar mb-3 mt-0 pt-0">
+        <Link to="/" className="navbar-logo mb-3 mx-6 pl-4" onClick={closeMobileMenu}>
           Zing
         </Link>
         <div className="menu-icon" onClick={handleClick}>
