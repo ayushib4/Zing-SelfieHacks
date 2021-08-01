@@ -5,7 +5,7 @@ import "./Insta.css";
 
 export function Insta() {
   return (
-    <div>
+    <div class="m-4">
       <Row>
         <Col md={4}>
           {/* <div className="title">Fable</div> */}
